@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online food delivery near you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="/phone.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width:685px)" href="/phone1.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0%;
+        }
+
+        .navbar::before {
+            content: '';
+            background: url(/food.jpg) no-repeat center center/cover;
+            position: absolute;
+            max-width: 100%;
+            /* height: auto; */
+            top: 0%;
+            left: 0%;
+            height: 451px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 60px;
+            /* border: 2px solid rgb(14, 13, 13); */
+            /* background-color: rgb(199, 184, 184); */
+        }
+
+        ul {
+
+            display: flex;
+        }
+
+        .logo {
+
+            filter: invert(100%);
+        }
+
+        img {
+            width: 89px;
+        }
+
+        li {
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 21px;
+            position: relative;
+            top: 21px;
+            left: 55px;
+            color: white;
+            font-size: 24px;
+        }
+
+        a:hover {
+
+            color: white;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: rgb(53, 30, 30);
+            border-radius: 3px;
+
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+            padding: 56px 220px;
+            position: relative;
+            top: 20px;
+        }
+
+        h1 {
+            margin-top: 78px;
+            font-size: 36px;
+        }
+
+        .middle {
+            display: flex;
+
+        }
+
+        .heading {
+            text-align: center;
+            position: relative;
+            top: 76px;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            text-align: center;
+            width: 338px;
+            /* border: 2px solid black; */
+            margin: 20px;
+            /* /* box-sizing: border-box; * */
+            background-color: #fdf6f6;
+            border-radius: 33px;
+            padding: 20px;
+            position: relative;
+            top: 126px;
+        }
+
+        .symbol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 230px;
+            width: 200px;
+            margin: 0px 0px;
+            /* display: flex;
+        justify-content: center; */
+
+
+        }
+
+        .symbol:hover {
+            padding: 0px;
+            background-color: rgb(248, 244, 244);
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .footer {
+            color: white;
+            border: 2px solid black;
+            position: relative;
+            top: 160px;
+            height: 190px;
+            background-color: black;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .footer img {
+            position: relative;
+            top: 100px;
+            float: left;
+            width: 80px;
+        }
+
+        .footer p {
+            float: left;
+            position: relative;
+            top: 135px;
+            left: 10px;
+            color: white;
+        }
+
+        .icon a:hover {
+            cursor: pointer;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            color: black;
+        }
+
+        .icon a {
+            position: relative;
+            font-size: 50px;
+            top: 77px;
+            right: 138px;
+            padding: 20px;
+            color: white;
+        }
+
+        p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            color: rgb(204, 123, 69);
+            background: none;
+            text-decoration-line: underline;
+        }
+
+        /* @media (min-width: 0px) and (max-width: 280px) {
+            .box {
+                width: 80%;
+            }
+
+            h1 {
+                margin-top: 4px;
+            }
+
+            .content h1 {
+                margin-top: 54px;
+            }
+
+            .footer img {
+                width: 39px;
+            }
+
+            .footer p {
+                top: 112px;
+                left: 10px;
+                color: white;
+                font-size: 12px;
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon a {
+                font-size: 25px;
+                top: 37px;
+                right: 94px;
+                padding: 10px;
+                color: white;
+            }
+
+            .footer {
+                height: 138px;
+            }
+
+            .icon a:hover {
+                cursor: pointer;
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 50%;
+                color: black;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Details</a></li>
+        </ul>
+    </header>
+    <section class="content">
+        <h1>Welcome to our store</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit perspiciatis temporibus reprehenderit molestias
+            dicta consequatur nihil quasi provident dolorem ut. Voluptatibus possimus, dolore sed eveniet quos nulla
+            rerum quae ab, accusamus placeat magni a!</p>
+    </section>
+
+    <section class="service">
+        <div class="heading">
+            <h1>Services</h1>
+        </div>
+        <div class="middle">
+            <div class="box" id="box1">
+                <img src="/pizza.jpg" alt="">
+                <h2>Pizza order</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa qui libero similique distinctio
+                    fugit!</p>
+
+            </div>
+            <div class="box" id="box2">
+                <img src="/logo.png" alt="">
+                <h2>Catering</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis possimus ipsa et. Fuga, error amet.
+                </p>
+            </div>
+            <div class="box" id="box3">
+                <img src="/delivery.png" alt="">
+                <h2>Food delivery</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quaerat?</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+
+            <img src="/download.png" alt="">
+            <p>&copy; Copyright 2022 <a href=" https://www.instagram.com/hustlerbayy/">Hustlerbay</a></p>
+            <div class="icon">
+                <a href=" https://www.instagram.com/hustlerbayy/"><i class="fab fa-instagram"></i></a>
+                <a href=" https://twitter.com/HustlerBay"><i class="fab fa-twitter"></i></a>
+                <a href=" https://www.linkedin.com/in/anshu-yadav-9422a01b2/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.quora.com/profile/Anshu-Yadav-510 "><i class="fab fa-quora"></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
